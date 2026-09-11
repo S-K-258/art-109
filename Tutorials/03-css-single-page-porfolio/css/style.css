@@ -1,0 +1,131 @@
+/* CSS resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font size preferences */
+html {
+    font-size: 100%;
+}
+
+
+/* General CSS */
+
+body {
+    background-color: bisque;
+    /* background-image: ; */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+header {
+    padding: 6rem;
+    margin-bottom: 3rem;
+    /* background-color: azure; */
+    background: #ff0000;
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(250, 202, 241, 1) 50%, rgba(247, 247, 247, 1) 100%);
+    border-bottom: #000 1px solid;
+    /* text-align: center; */
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+nav {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    /* background-color: #ff0000; */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin: 5rem;
+    display: inline-block;
+}
+
+
+main {
+    /* xxxx */
+}
+
+.about-section,
+.portfolio-section,
+.contact-section {
+    margin-bottom: 4rem;
+}
+
+
+.about-content,
+.portfolio-content,
+.contact-content {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 2rem 0;
+
+}
+
+.about-section h2,
+.portfolio-section h2,
+.contact-section h2 {
+    padding: 2rem 0;
+
+
+}
+
+
+.portfolio-item {
+    margin-bottom: 5rem;
+    background-color: aquamarine;
+    padding: 4rem;
+    text-align: justify;
+    border-radius: 0.5rem;
+    /* border: 2px #d1ffe5 solid; */
+    border-style: solid;
+    border-width: 13px;
+    border-color: aqua rgb(77, 138, 117) antiquewhite rosybrown;
+    border-radius: .5rem;
+    box-shadow: 0 4px 4px rgb(255, 181, 208);
+
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-radius: 0.5rem;
+
+}
+
+.portfolio-item h3 {
+    margin: 1rem 0;
+}
+
+.portfolio-item p {
+    font-size: 1.2rem;
+
+}
+
+.about-section {
+    background-color: aliceblue;
+}
+
+.portfolio-section {
+    background-color: aliceblue;
+}
+
+footer {
+    background-color: rgb(255, 0, 0);
+    color: #00ffbf;
+    padding: 1rem;
+    text-align: right;
+}
+
+footer p{
+    font-size: 1rem;
+}
