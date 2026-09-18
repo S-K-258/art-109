@@ -1,0 +1,41 @@
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.square {
+    background-color: brown;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.button {
+    color: azure;
+    background-color: blue;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+    /* margin: 50px auto;
+    display: block;
+    width:100px;
+    text-align: center; */
+}
+
+.square:hover {
+    background-color: aquamarine;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button:hover{
+    background-color: aqua;
+    color: black;
+    transform: scale(1.5);
+}
