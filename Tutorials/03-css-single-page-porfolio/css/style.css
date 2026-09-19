@@ -1,4 +1,19 @@
-/* CSS resets */
+/* --------color palette */
+
+
+:root {
+    --bg-color-1: #ffcce1;
+    --bg-color-2: #ffafd0;
+    --font: #e2005e;
+    --accent-1: #FF4995;
+    --accent-2: #ff4968;
+    --dark: #7c0034;
+}
+
+
+
+
+/* ------CSS resets */
 
 * {
     margin: 0;
@@ -11,29 +26,56 @@ html {
 }
 
 
-/* General CSS */
+/* --------- General CSS */
+
+
+html {
+    scroll-behavior: smooth;
+}
 
 body {
-    background-color: bisque;
+    background-color: var(--bg-color-1);
+    color: var(--font);
     /* background-image: ; */
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Rockwell, Courier Bold, Courier, Georgia, Times, Times New Roman, serif;
     font-size: 1.5rem;
     line-height: 1.5;
+    text-align: justify;
 }
+
+@media (max-width: 700px) {
+    body {
+        font-size: 1rem;
+    }
+}
+
 
 header {
     padding: 6rem;
     margin-bottom: 3rem;
     /* background-color: azure; */
-    background: #ff0000;
+    /* background: #ff0000; */
     background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(250, 202, 241, 1) 50%, rgba(247, 247, 247, 1) 100%);
     border-bottom: #000 1px solid;
     /* text-align: center; */
 }
 
+@media (max-width:700px) {
+    header {
+        padding-left: 2rem;
+    }
+}
+
 header h1 {
     font-size: 3rem;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: var(--accent-1);
+    font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; 
+
+
 }
+
 
 nav {
     position: absolute;
@@ -45,14 +87,42 @@ nav {
 nav a {
     text-decoration: none;
     color: black;
-    margin: 5rem;
+    margin: 0 1rem;
     display: inline-block;
+    transition: all .5s;
 }
 
+nav a:hover {
+    color: var(--accent-1);
+    background-color: var(--bg-color-1);
+    transform: scale(1.3);
+}
+
+@media (max-width: 750px) {
+    nav a{
+        margin: 0 .5rem;
+    }
+
+
+}
 
 main {
-    /* xxxx */
+    margin: 0;
 }
+
+@media (max-width: 850px) {
+    main {
+        margin: 2rem;
+
+    }
+}
+
+@media (max-width: 600px) {
+    main{
+        margin: 1rem;
+    }
+}
+
 
 .about-section,
 .portfolio-section,
@@ -65,15 +135,18 @@ main {
 .portfolio-content,
 .contact-content {
     max-width: 50rem;
-    margin: 2rem auto;
-    padding: 2rem 0;
-
+    margin: 3rem auto;
+    padding: 3rem 0;
 }
 
 .about-section h2,
 .portfolio-section h2,
 .contact-section h2 {
     padding: 2rem 0;
+    margin: 2rem 0;
+    background-color: var(--accent-2);
+    border-radius: 3rem;
+    display: inline-block;
 
 
 }
@@ -94,6 +167,20 @@ main {
 
 }
 
+@media (max-width: 800px) {
+    .portfolio-item {
+        padding: 3rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .portfolio-item {
+        padding: 2rem;
+    }
+}
+
+
+
 .portfolio-item img {
     max-width: 100%;
     margin: 0 auto;
@@ -112,20 +199,29 @@ main {
 }
 
 .about-section {
-    background-color: aliceblue;
+    background-color: var(--bg-color-1);
 }
 
 .portfolio-section {
-    background-color: aliceblue;
+    background-color: var(--bg-color-2);
 }
 
 footer {
-    background-color: rgb(255, 0, 0);
-    color: #00ffbf;
+    background-color: var(--dark);
+    color: var(--font);
     padding: 1rem;
     text-align: right;
 }
 
-footer p{
+footer p {
     font-size: 1rem;
+}
+
+
+
+
+/* --------style class */
+
+.accent-1 {
+    color: var(--accent-1);
 }
