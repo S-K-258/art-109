@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sk258 portfolio</title>
+    <link rel="stylesheet" href="css/baguetteBox.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,7 +48,7 @@
                 <h2>My stuff</h2>
                 <div class="flex-container-grid">
                     <div class="portfolio-item flex-item-grid">
-                        <img src="../image/DDR.png" alt="DDR">
+                        <a href="../image/DDR.png" data-caption="capotion for light box"><img src="../image/DDR.png" alt="DDR"></a>
                         <h3>Glitch</h3>
                         <p>The pictures above are from the military parades of East Germany and North Korea, as well as
                             the
@@ -62,7 +63,7 @@
                             And the use of glitch art can add to this "mysterious" atmosphere even more.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <img src="../image/WORK.png" alt="meme">
+                        <a href="../image/WORK.png" data-caption="Meme mashup"><img src="../image/WORK.png" alt="meme"></a>
                         <h3>Meme mashup</h3>
                         <p>I used one of the clips from American Psycho and the controversial meme from the GTX970 to
                             tie it
@@ -71,7 +72,7 @@
                             *Patrick Bateman thinks this user has a "good taste" in his choice of graphics cards.</p>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <img src="../image/2.jpg" alt="3d-stuff">
+                        <a href="../image/2.jpg"data-caption="3d print"><img src="../image/2.jpg" alt="3d-stuff"></a>
                         <h3>3d print</h3>
                         <p>I used plug-ins to become a 3D model and print it,
 
@@ -155,6 +156,12 @@
         </div>
     </footer>
     <script src="js/hamburger.js"></script>
+    <script src="js/baguetteBox.js"></script>
+    <script>
+        baguetteBox.run(".flex-container-grid", {
+            caption: true
+        })
+    </script>
 </body>
 
 </html>
