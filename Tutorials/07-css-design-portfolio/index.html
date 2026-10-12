@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sk258 portfolio</title>
-    <link rel="stylesheet" href="css/baguetteBox.css">
+    <title>Obj258 portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,7 @@
         <nav class="navbar">
             <div class="nav-brand">
                 <a href="#">
-                    <h1>Sk258</h1>
+                    <h1>Obj258</h1>
                 </a>
             </div>
             <div class="nav">
@@ -50,49 +49,35 @@
                 <h2>My stuff</h2>
                 <div class="flex-container-grid">
                     <div class="portfolio-item flex-item-grid">
-                        <a href="../image/DDR.png" data-caption="capotion for light box"><img src="../image/DDR.png"
-                                alt="DDR"></a>
-                        <h3>Glitch</h3>
-                        <p>The pictures above are from the military parades of East Germany and North Korea, as well as
-                            the
-                            Soviet Union.
+                        <a class="project-link" href="projects/glitch/index.html">
+                            <img src="../image/DDR.png" alt="DDR">
+                            <h3>Glitch</h3>
 
-                            The first one uses the Text Editor, the second uses Audacity, and the third uses a
-                            combination
-                            of the two.
-
-                            The reason why I chose these images is that I personally like this communist art culture,
-
-                            And the use of glitch art can add to this "mysterious" atmosphere even more.</p>
+                        </a>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="../image/WORK.png" data-caption="Meme mashup"><img src="../image/WORK.png"
-                                alt="meme"></a>
-                        <h3>Meme mashup</h3>
-                        <p>I used one of the clips from American Psycho and the controversial meme from the GTX970 to
-                            tie it
-                            together.
-
-                            *Patrick Bateman thinks this user has a "good taste" in his choice of graphics cards.</p>
+                        <a class="project-link" href="projects/meme-mashup/index.html">
+                            <img src="../image/WORK.png" alt="meme">
+                            <h3>Meme mashup</h3>
+                        </a>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="../image/2.jpg" data-caption="3d print"><img src="../image/2.jpg" alt="3d-stuff"></a>
-                        <h3>3d print</h3>
-                        <p>I used plug-ins to become a 3D model and print it,
-
-                            and and I also manually colored this model inspired by helldiver2,
-
-                            and I also made it into the shape of a key chain.</p>
+                        <a class="project-link" href="projects/3d-print/index.html">
+                            <img src="../image/2.jpg" alt="3d-stuff">
+                            <h3>3d print</h3>
+                        </a>
                     </div>
                     <div class="portfolio-item flex-item-grid">
-                        <a href="../image/poker.png" data-caption="poker-night"><img src="../image/poker.png"
-                                alt="poker-night"></a>
-                        <h3>Poker night</h3>
-                        <p>My image is an attempt to draw a "Spider Solitaire" victory picture similar to the one that
-                            comes
-                            with the Windows 7 system.
-
-                            The thing I made was inspired by Spider Solitaire. </p>
+                        <a class="project-link" href="projects/poker-night/index.html">
+                            <img src="../image/poker.png" alt="poker-night">
+                            <h3>Poker night</h3>
+                        </a>
+                    </div>
+                    <div class="portfolio-item flex-item-grid">
+                        <a class="project-link" href="projects/memoirs/index.html">
+                            <img src="../image/TV.png" alt="Memoirs — television video artwork">
+                            <h3>Memoirs</h3>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -102,7 +87,7 @@
         <section class="contact-section" id="contact-section">
             <div class="contact-content">
                 <h2>Contanct Me</h2>
-                <p>xxxxxxxxxxxxx</p>
+                <p>obj225588@gmail.com</p>
             </div>
 
         </section>
@@ -111,27 +96,14 @@
     </main>
 
     <footer class="flex-container">
-        <p>&copy;2026 SK258</p>
+        <p>&copy;2026 Obj258</p>
         <div class="social-links">
             <a href="#"><img src="../image/icon-logo-youtube.png" alt=""></a>
             <a href="#"><img src="../image/icon-logo-facebook.png" alt=""></a>
             <a href="#"><img src="../image/icon-logo-linkedin.png" alt=""></a>
         </div>
     </footer>
-
-        <ul id="floating-menu" class="floating-menu" hidden>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#portfolio-section">Work</a></li>
-            <li><a href="#contact-section">Contact</a></li>
-        </ul>
-    </nav>
     <script src="js/hamburger.js"></script>
-    <script src="js/baguetteBox.js"></script>
-    <script>
-        baguetteBox.run(".flex-container-grid", {
-            caption: true
-        })
-    </script>
 </body>
 
 </html>
