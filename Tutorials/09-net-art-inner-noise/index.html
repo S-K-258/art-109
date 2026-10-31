@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noise in My Head</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1>Noise in my head.</h1>
+    <p class="hint">Drag a thought. Click to see the other side.</p>
+
+    <main>
+        <!-- The middle mirror -->
+        <div class="mirror">
+            <video id="webcam" autoplay muted playsinline></video>
+            <img src="media/mirror-frame.png" alt="Golden mirror frame" draggable="false">
+        </div>
+
+        <!-- Note and camera -->
+        <button class="note note1" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+        <button class="note note2" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+        <button class="note note3" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+        <button class="note note4" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+        <button class="note note5" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+        <button class="note note6" type="button">
+            <span></span>
+            <video autoplay muted playsinline aria-hidden="true"></video>
+        </button>
+    </main>
+
+    <div class="controls">
+        <button id="camera-button" type="button">Turn camera on</button>
+        <button id="shuffle-button" type="button">New thoughts</button>
+        <p id="message" role="status" hidden>Camera unavailable. Check your camera and browser permissions.</p>
+        <p class="hint">Nothing is recorded or uploaded.</p>
+    </div>
+
+    <script src="js/notes.js"></script>
+    <script src="js/webcam.js"></script>
+</body>
+
+</html>
