@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tut 8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <iframe width="1120" height="730" src="https://www.youtube.com/embed/veZOrXVHf7U?si=c41eJQiU4NzXCyvG"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="media/bean.gif" alt="bean" class="bean">
+        <div class="shhh-div">
+            <p>
+                Hello...shhhhhhhhhhhhhhhhhhhhhhh
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+                hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+            </p>
+            <img src="media/bean-2.gif" alt="bean2" class="bean2">
+        </div>
+        <!-- autoplay -->
+        <video width="270" height="360" autoplay muted loop>
+            <source src="media/bean-video-2.mp4" type="video/mp4">
+        </video>
+        <!-- hover-video -->
+        <video class="hover-video" width="270" height="360" muted loop>
+            <source src="media/bean-video-2.mp4" type="video/mp4">
+        </video>
+        <!-- click -->
+        <video class="click-video" width="270" height="360" muted loop>
+            <source src="media/bean-video-2.mp4" type="video/mp4">
+        </video>
+
+        <video id="webcam" autoplay playsinline></video>
+    </main>
+
+    <script src="js/video.js"></script>
+    <script src="js/webcam.js"></script>
+</body>
+
+</html>
