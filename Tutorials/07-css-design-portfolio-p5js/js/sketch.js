@@ -41,3 +41,5 @@ function drwaStuff(_x, _y) {
     stroke(random(255), random(255), random(255));
     ellipse(_x + 20, _y, 35, 20);
 }
+
+
